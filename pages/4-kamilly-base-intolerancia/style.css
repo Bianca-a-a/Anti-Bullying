@@ -1,0 +1,46 @@
+body {
+    background-color: #2BAF2B;
+}
+
+h1 {
+color: #006600 !important;
+-webkit-text-stroke: #38A352;
+-webkit-text-stroke-width: 1px;
+font-family: 'Jersey 25';
+font-size: 50px;
+text-align: center;
+}
+
+.caixinha{
+width: 400px;
+ height: 450px;
+ background-color: #3FC93F;
+ border-radius: 20px;
+ margin-left: 15px;
+}
+
+h3 {
+color: #006600 !important;
+-webkit-text-stroke: #38A352;
+-webkit-text-stroke-width: 1px;
+font-family: 'Jersey 25';
+font-size: 50px;
+margin-left: 130px;
+}
+
+p {
+ color:white;
+ font-family: 'Grenze';
+ font-size: 21px;
+ max-width: 300px;
+ margin-left: 45px;
+ margin-top: -50px;
+}
+
+.caixinha2 {
+ width: 400px;
+ height: 450px;
+ background-color: #3FC93F;
+ border-radius: 20px;
+ margin-left: 50px;
+}
