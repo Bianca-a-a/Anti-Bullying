@@ -37,11 +37,14 @@ h1 {
 .subtitle {
     text-align: center;
     color: #ffffff;
-    font-size: 0.95rem;
+    font-size: 20px;
     margin-bottom: 30px; 
     margin-top: -20px;
     font-style: italic;
     opacity: 0.9;
+    font-family: "Grenze", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .cards-container {
@@ -78,20 +81,23 @@ h1 {
 }
 
 .card-1 .card-header {
-    background-color: #f14f88;
+    background-color: #C36A89;
 }
 
 .card-2 .card-header {
-    background-color: #3498db;
+    background-color: #C36A89;
 }
 
 .card-3 .card-header {
-    background-color: #2ecc71;
+    background-color: #C36A89;
 }
 
 .card-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-family: "Grenze", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .card-body {
@@ -134,27 +140,27 @@ h1 {
 }
 
 .card-1 .card-btn {
-    background-color: #f14f88;
+    background-color: #C36A89;
 }
 
 .card-1 .card-btn:hover {
-    background-color: #d43d75;
+    background-color: #C36A89;
 }
 
 .card-2 .card-btn {
-    background-color: #3498db;
+    background-color: #C36A89;
 }
 
 .card-2 .card-btn:hover {
-    background-color: #2980b9;
+    background-color: #C36A89;
 }
 
 .card-3 .card-btn {
-    background-color: #2ecc71;
+    background-color: #C36A89;
 }
 
 .card-3 .card-btn:hover {
-    background-color: #27ae60;
+    background-color: #C36A89;
 }
 
 @media (max-width: 768px) {
