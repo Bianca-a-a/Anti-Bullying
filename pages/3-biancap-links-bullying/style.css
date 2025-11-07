@@ -1,5 +1,6 @@
 body {
     background-color: #FDF364;
+    align-items: center ;
 }
 
 .superior {
@@ -10,6 +11,7 @@ body {
     color:#FDF364 ;
     -webkit-text-stroke:  #C8BE36;
     -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 3px 2px #000;
 }
 
 .sub {
@@ -19,14 +21,14 @@ body {
     text-align: center;
     margin-top: -5%;
     font-size: 70px;
+    text-shadow: 2px 3px 2px #000;
 }
 
 .caixas {
     margin-top: -50px;
     display: flex;
     align-items: center;
-    gap: 90px;
-    margin-left: auto;
+   
 }
 
 .caixa {
@@ -36,6 +38,8 @@ body {
     width: 300px;
     height: 400px; 
     margin-top: 100px;
+    margin-right:auto;
+    margin-left: -390px;
 }
 
 .sujeito {
@@ -51,8 +55,38 @@ body {
 
 .texto  {
     color: #B37A45;
-    font-size: 39px;
-    font-family: "Jomhuria", serif;
+    font-size: 24px;
+    font-family: "Grenze", serif;
     margin-top: 23px;
     text-align: justify;
+}
+
+.inferior {
+    display: block;
+    text-align: center;
+    text-shadow: 2px 3px 2px #000;
+}
+
+.ligue {
+    font-family: "Jomhuria", serif;
+    color: aliceblue;
+    -webkit-text-stroke:  #B37A45;
+    -webkit-text-stroke-width: 1px;
+    margin-top: 1%;
+    font-size: 55px;
+    text-shadow: 2px 3px 2px #000;
+}
+
+.link {
+    background-color: #B37A45;
+    height: 30px;
+    width: 50%;
+    border-radius: 20px;
+    margin-left: 370px;
+    margin-top: -45px;
+}
+
+.ajuda {
+    color: #E8C67D;
+    font-size: 25px;
 }
