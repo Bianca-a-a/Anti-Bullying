@@ -1,0 +1,48 @@
+body {
+    background-color: #4378F3;
+}
+
+h1 {
+    font-family: "Jomhuria", serif;
+    text-align: center;
+    font-size: 70px;
+    color: #4378F3;
+    -webkit-text-stroke: #3058B8;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 10px 17px rgba(5, 5, 5, 0.5);
+}
+
+.caixa {
+    width: 400px;
+    height: 450px;
+    background-color: #5487FF;
+    border-radius: 20px;
+    margin-left: 3%;
+    margin-top: 5%;
+    font-size: 20%;
+}
+
+h2 {
+    font-family: "Joti One", serif;
+    font-size: 40px;
+    color: white;
+    font-weight: 400px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 30px;
+    padding-top: 20px;
+}
+
+p {
+    font-family: "Grenze", serif;
+    font-size: 700%;
+    color: white;
+    font-family: grenze;
+    width: 360px;
+    padding: 25px;
+    margin: 0;
+    margin-top: -15px;
+}
+
+
+
