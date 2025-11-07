@@ -1,0 +1,130 @@
+body {
+    background-color: #AC1634;
+ }
+ h1 {
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    color: #E77291;
+    text-shadow: 2px 10px 17px rgba(5, 5, 5, 0.5);;
+    display: flex;
+    justify-content: center;
+    -webkit-text-stroke: #CA4141;
+    -webkit-text-stroke-width: 2px;
+ }
+ h2 {
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    
+
+ }
+ h3 {
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: normal;
+    color: #81022e;
+    margin-top: -10px;
+    margin-right: 350px;
+
+ }
+
+ p {
+    font-family: "Jomhuria", serif;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    max-width: 800px;
+    color: #FCD7D7;
+    font-size: 40px;
+    margin-top: -50px !important;
+    margin: 0 auto;
+ }
+.bananinha2 {
+    color: white;
+    margin-top: -145px !important;
+    margin-right: 100px;
+}
+.bananinha3 {
+    font-family: "Grenze", serif;
+    font-weight: 300;
+    font-size: 20px;
+    max-width: 400px !important;
+    margin-top: 10px !important;
+    font-style: normal;
+   
+    color: white;
+}
+.Caixa {
+    background-color: #3E0014;
+    border-radius: 30px;        
+    width: 450px;              
+    height: 340px;
+    padding: 20px;           
+    margin: 20px auto;        
+    text-align: center;       
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+.Caixa2 {
+    background-color: #3E0014;
+    border-radius: 30px;        
+    width: 450px;              
+    height: 340px;
+    padding: 20px;           
+    margin: 20px auto;        
+    text-align: center;       
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-left: -120px;
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+.bananinha {
+    margin-top: -25px;
+}
+.dois {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px !important;
+    
+}
+.Caixa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Sombra mais pronunciada */
+    background-color: #4a0018; /* Leve mudança de cor */
+}
+.Caixa2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Sombra mais pronunciada */
+    background-color: #4a0018; /* Leve mudança de cor */
+}
+.img {
+  width: 57%;
+  margin-left: 65px;
+  margin-top: -5px;
+  transition: transform 0.3s ease-in-out; /* Transição para a imagem também */
+}
+.img2 {
+    width: 65%;
+    margin-left: 10px;
+    margin-top: 35px;
+    transition: transform 0.3s ease-in-out; /* Transição para a imagem também */
+}
+
+/* Efeito adicional nas imagens quando hover na caixa */
+.Caixa:hover .img {
+    transform: scale(1.05); /* Leve zoom na imagem */
+}
+
+.Caixa2:hover .img2 {
+    transform: scale(1.05); /* Leve zoom na imagem */
+}
