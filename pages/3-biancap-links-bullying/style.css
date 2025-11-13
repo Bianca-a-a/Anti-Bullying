@@ -1,92 +1,86 @@
 body {
     background-color: #FDF364;
-    align-items: center ;
+    margin: 0;
+    padding-top: 80px;
+    font-family: "Grenze", serif;
 }
 
 .superior {
-    font-size: 300%;
-    display: block;
     text-align: center;
     font-family: "Jomhuria", serif;
-    color:#FDF364 ;
-    -webkit-text-stroke:  #C8BE36;
-    -webkit-text-stroke-width: 1px;
+    color:#FDF364;
+    -webkit-text-stroke: #C8BE36 1px;
     text-shadow: 2px 3px 2px #000;
+}
+
+.superior h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 
 .sub {
     color: aliceblue;
-    -webkit-text-stroke:  #B37A45;
-    -webkit-text-stroke-width: 1px;
-    text-align: center;
-    margin-top: -5%;
-    font-size: 70px;
+    -webkit-text-stroke: #B37A45 1px;
+    font-size: 30px;
     text-shadow: 2px 3px 2px #000;
 }
 
 .caixas {
-    margin-top: -50px;
     display: flex;
-    align-items: center;
-   
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px;
 }
 
 .caixa {
     background-color: #E8C67D;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;       
     width: 300px;
-    height: 400px; 
-    margin-top: 100px;
-    margin-right:auto;
-    margin-left: -390px;
+    min-height: 300px; 
+    margin: 20px;
+    box-shadow: 2px 2px 5px #000;
 }
 
 .sujeito {
     font-family: "Jomhuria", serif;
-    font-size: 50px;
+    font-size: 28px;
     color: white;
-    -webkit-text-stroke:  #B37A45;
-    -webkit-text-stroke-width: 1px;
-    margin-left: 20px; 
-    position: relative;
-    top: -200px;
+    -webkit-text-stroke: #B37A45 1px;
+    margin-bottom: 15px;
 }
 
-.texto  {
+.texto {
     color: #B37A45;
     font-size: 24px;
-    font-family: "Grenze", serif;
-    margin-top: 23px;
+    line-height: 1.2;
     text-align: justify;
 }
 
 .inferior {
-    display: block;
     text-align: center;
+    margin: 40px 0;
     text-shadow: 2px 3px 2px #000;
 }
 
 .ligue {
     font-family: "Jomhuria", serif;
     color: aliceblue;
-    -webkit-text-stroke:  #B37A45;
-    -webkit-text-stroke-width: 1px;
-    margin-top: 1%;
-    font-size: 55px;
-    text-shadow: 2px 3px 2px #000;
+    -webkit-text-stroke: #B37A45 1px;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 .link {
     background-color: #B37A45;
-    height: 30px;
-    width: 50%;
+    padding: 10px;
     border-radius: 20px;
-    margin-left: 370px;
-    margin-top: -45px;
+    display: inline-block;
 }
 
 .ajuda {
     color: #E8C67D;
-    font-size: 25px;
+    font-size: 20px;
+    text-decoration: none;
 }
