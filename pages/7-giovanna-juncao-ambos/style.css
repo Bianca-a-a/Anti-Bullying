@@ -5,6 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 body {
     background-color: #F898B9;
     color: #333;
@@ -12,6 +13,7 @@ body {
     padding: 20px;
     min-height: 100vh;
 }
+
 
 .container {
     max-width: 1200px;
@@ -34,7 +36,6 @@ h1 {
     margin-top: 10px;
 }
 
-
 .subtitulo {
     text-align: center;
     color: #ffffff;
@@ -55,7 +56,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-
 .caixa {
     background-color: white;
     border-radius: 10px;
@@ -74,7 +74,6 @@ h1 {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-
 .topo {
     padding: 20px;
     color: white;
@@ -83,13 +82,11 @@ h1 {
     background-color: #C36A89;
 }
 
-
 .titulo {
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-family: "Grenze", serif;
 }
-
 
 .corpo {
     padding: 20px;
@@ -98,12 +95,10 @@ h1 {
     flex-direction: column;
 }
 
-
 .texto {
     margin-bottom: 15px;
     text-align: justify;
 }
-
 
 .rodape {
     padding: 20px;
@@ -146,7 +141,7 @@ h1 {
     border-radius: 5px;
     font-weight: 600;
     transition: all 0.3s ease;
-    width: auto; 
+    width: auto;
     display: inline-block;
 }
 
@@ -154,4 +149,77 @@ h1 {
     background-color: #a15673;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 70px;
+        line-height: 1;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
+    .caixa {
+        max-width: 100%;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 55.5px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .caixas {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .caixa {
+        max-width: 100%;
+        padding: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+
+    .texto {
+        font-size: 0.95rem;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    .topo {
+        background-color: #C36A89;
+        color: white;
+        text-align: center;
+        flex-shrink: 0;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        /* combina com o card */
+    }
 }
