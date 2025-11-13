@@ -4,66 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTOLERÂNCIA RELIGIOSA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>INTOLERÂNCIA RELIGIOSA - Responsivo</title>
+    
+    <!-- Carregando Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jaini&family=Jomhuria&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Joti+One&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+    
+    <!-- Carregando Tailwind CSS para responsividade -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Estilos customizados para Text Stroke e Fontes, garantindo a fidelidade visual do original -->
+    <style>
+        /* Definindo as famílias de fonte para uso no Tailwind */
+        .font-jomhuria { font-family: 'Jomhuria', serif; line-height: 1; }
+        .font-joti { font-family: 'Joti One', serif; line-height: 1.2; }
+
+        /* Classe para o efeito de contorno (stroke) no título principal */
+        .text-stroke-h1 {
+            color: #BC3ACF;
+            -webkit-text-stroke: 1px #942FA3; /* Stroke padrão (mobile) */
+            text-stroke: 1px #942FA3;
+        }
+
+        /* Ajustes de tamanho e stroke para telas maiores (desktop/md) */
+        @media (min-width: 768px) {
+            .text-stroke-h1 {
+                -webkit-text-stroke-width: 3px; /* Stroke maior para desktop */
+                text-stroke-width: 3px;
+            }
+        }
+    </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="../1-alan-base-bullying/index.html">Página
-                        inicial</a>
-                    <a class="nav-link" href="../5-maria-sobre-intolerancia/index.html">intolerância religiosa</a>
-                    <a class="nav-link" href="../6-maykon-links-intolerancia/index.html">Peça ajuda</a>
-                </div>
-            </div>
+<body class="bg-[#BC3ACF] min-h-screen pb-10">
+
+    <!-- Navbar Responsiva (Menu) -->
+    <nav class="bg-black text-white p-4 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-center items-center">
+            <a class="p-2 text-lg md:text-xl font-medium rounded-lg hover:bg-[#942FA3] transition duration-200"
+                href="../1-alan-base-bullying/index.html">Página Inicial</a>
+            <a class="p-2 text-lg md:text-xl font-medium rounded-lg hover:bg-[#942FA3] transition duration-200 md:ml-6 mt-2 md:mt-0"
+                href="../5-maria-sobre-intolerancia/index.html">Intolerância Religiosa</a>
+            <a class="p-2 text-lg md:text-xl font-medium rounded-lg hover:bg-[#942FA3] transition duration-200 md:ml-6 mt-2 md:mt-0"
+                href="../6-maykon-links-intolerancia/index.html">Peça Ajuda</a>
         </div>
     </nav>
 
-    <div class="titulo">
-        <h1>Combate a intolerância religiosa</h1>
+    <!-- Título Principal -->
+    <div class="text-center mt-5 md:mt-10">
+        <h1 class="text-stroke-h1 font-jomhuria text-9xl md:text-[10rem] leading-none mb-10">
+            Combate a intolerância religiosa
+        </h1>
     </div>
-    <div class="subtitulo">
-        <h2>como combater a intolerância religiosa</h2>
+    
+    <!-- Subtítulo -->
+    <div class="text-center mt-[-3rem] md:mt-[-5rem] mb-10 md:mb-16">
+        <h2 class="text-white font-jomhuria text-7xl md:text-8xl leading-none">
+            como combater a intolerância religiosa
+        </h2>
     </div>
-    <p>EDUCAÇÃO E CONCIENTIZAÇÃO</p>
 
-    <H6 class="titu">bLABLABLA</H6>
+    <!-- Seções de Combate (Layout Responsivo - Stack no Mobile, Linha no Desktop) -->
+    <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 px-4 md:px-10 lg:px-20">
 
-    <div class="blabla">
-        <div class="caixinha">
-            <h3>Aprender e Ensinar: Buscar conhecimento sobre as diversas religiões, suas crenças e práticas. A
-                ignorância é um dos maiores combustíveis da intolerância.</h3>
+        <!-- Caixa 1: EDUCAÇÃO E CONCIENTIZAÇÃO -->
+        <div class="w-full md:w-1/3 flex flex-col items-center">
+            <p class="text-white font-joti text-2xl md:text-3xl mb-[-0.5rem] mt-[-3rem] text-center">
+                EDUCAÇÃO E CONCIENTIZAÇÃO
+            </p>
+            <div class="bg-[#df80f9] rounded-xl p-6 h-full shadow-lg transition duration-300 hover:translate-y-[-8px] hover:shadow-2xl cursor-pointer mt-4">
+                <h3 class="caixinha-text text-white font-jomhuria text-[2.5rem] md:text-[3.25rem] text-center leading-tight">
+                    Aprender e Ensinar: Buscar conhecimento sobre as diversas religiões, suas crenças e práticas. A ignorância é um dos maiores combustíveis da intolerância.
+                </h3>
+            </div>
         </div>
-        <div class="caixinha2">
-            <h4>Não se Calar diante a situaçao, utilizar os Canais Oficiais parra fazer a denuncia, Exigir Punição a
-                justiça.</h4>
+
+        <!-- Caixa 2: DENÚNCIA E FISCALIZAÇÃO -->
+        <div class="w-full md:w-1/3 flex flex-col items-center mt-6 md:mt-0">
+            <h6 class="font-joti text-white text-2xl md:text-3xl mb-[-0.5rem] mt-[-3rem] text-center">
+                DENÚNCIA E FISCALIZAÇÃO
+            </h6>
+            <div class="bg-[#df80f9] rounded-xl p-6 h-full shadow-lg transition duration-300 hover:translate-y-[-8px] hover:shadow-2xl cursor-pointer mt-4">
+                <h4 class="caixinha-text text-white font-jomhuria text-[2.5rem] md:text-[3.25rem] text-center leading-tight">
+                    Não se Calar diante a situação, utilizar os Canais Oficiais para fazer a denúncia, Exigir Punição à justiça.
+                </h4>
+            </div>
         </div>
-        <div class="caixinha3">
-            <h5>construir oou participar de comunidades q lutam pela mesma causa, ter empatia pelo proximo e defender as
-                vitimas.</h5>
+
+        <!-- Caixa 3: DIÁLOGO E RESPEITO -->
+        <div class="w-full md:w-1/3 flex flex-col items-center mt-6 md:mt-0">
+            <h6 class="font-joti text-white text-2xl md:text-3xl mb-[-0.5rem] mt-[-3rem] text-center">
+                DIÁLOGO E RESPEITO
+            </h6>
+            <div class="bg-[#df80f9] rounded-xl p-6 h-full shadow-lg transition duration-300 hover:translate-y-[-8px] hover:shadow-2xl cursor-pointer mt-4">
+                <h5 class="caixinha-text text-white font-jomhuria text-[2.5rem] md:text-[3.25rem] text-center leading-tight">
+                    Construir ou participar de comunidades que lutam pela mesma causa, ter empatia pelo próximo e defender as vítimas.
+                </h5>
+            </div>
         </div>
     </div>
-    <div class="ajuda">
-        <h6>CASO SOFRA ALGO PARECIDO COM ISSO ACESSE O SITE ABAIXO OU DISQUE “100” PARA DENUNCIAR</h6>
-    </div>
-    <div class="inferior">
-        <div class="link">
-            <a href="https://new.safernet.org.br/" class="ajuda">Aperte aqui e busque ajuda, estamos com você !!!</a>
+    
+    <!-- Seção de Ajuda e Link -->
+    <div class="text-center mt-12 px-4">
+        <h6 class="text-white font-jomhuria text-5xl md:text-6xl leading-none mb-4">
+            CASO SOFRA ALGO PARECIDO COM ISSO ACESSE O SITE ABAIXO OU DISQUE “100” PARA DENUNCIAR
+        </h6>
+        
+        <div class="bg-[#762382] w-full max-w-lg mx-auto h-16 md:h-20 rounded-xl flex justify-center items-center shadow-2xl hover:scale-[1.02] transition duration-300">
+            <a href="https://new.safernet.org.br/" class="text-[#c86fd5] font-bold text-xl md:text-2xl no-underline hover:text-white transition duration-200">
+                Aperte aqui e busque ajuda, estamos com você !!!
+            </a>
         </div>
     </div>
 </body>
