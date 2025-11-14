@@ -63,7 +63,7 @@ p {
 .bananinha2 {
     color: white;
     margin-top: -145px !important;
-    margin-right: 100px;
+    margin-right: 70px;
 }
 
 .bananinha3 {
@@ -74,6 +74,7 @@ p {
     margin-top: 10px !important;
     font-style: normal;
     color: white;
+  
 }
 
 .Caixa {
@@ -122,7 +123,7 @@ p {
 
 .Caixa2:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 0px rgba(0,0,0,0.3);
     background-color: #4a0018; 
 }
 
@@ -152,9 +153,6 @@ p {
     transform: scale(1.05); 
 }
 
-/* ===================== */
-/* 📱 MEDIA QUERY MOBILE */
-/* ===================== */
 @media (max-width: 450px) {
     body {
         background-color: #AC1634;
@@ -180,9 +178,10 @@ p {
     }
 
     h4 {
-        font-size: 30px;
+        font-size: 40px;
         margin-right: 0;
         margin-left: 0;
+        margin-top: 20px !important;
         text-align: center;
     }
 
@@ -208,8 +207,8 @@ p {
         height: auto;
         margin: 10px auto;
         padding: 15px;
+      
     }
-
     .img,
     .img2 {
         width: 80%;
@@ -222,7 +221,7 @@ p {
     }
 
     .bananinha2 {
-        margin-top: -60px !important;
+        margin-top: -50px !important;
         margin-right: 0;
         text-align: center;
     }
@@ -232,4 +231,66 @@ p {
         max-width: 100% !important;
         margin-top: 5px !important;
     }
+    .botao {
+        font-size: 22px;
+        padding: 12px 30px;
+      }
+    
 }
+.botao {
+    background-color: #4a0018; 
+    font-size: 20%;
+}
+.container {
+    text-align: center;
+  }
+
+  /* Botão */
+  .botao {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 28px;
+    color: #fff;
+    background-color: #601227;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  /* Efeito de brilho ao passar o mouse */
+  .botao::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 50px;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease;
+  }
+
+  .botao:hover::before {
+    left: 120%;
+  }
+
+  /* Animação no hover */
+  .botao:hover {
+    background-color: #f28fa7;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  /* Animação de clique */
+  .botao:active {
+    transform: scale(0.95);
+  }
+
+
+
+
