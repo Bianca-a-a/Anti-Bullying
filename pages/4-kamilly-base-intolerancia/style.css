@@ -1,11 +1,9 @@
 body {
-    background-color: #2BAF2B;
-
-    /* Flexbox para alinhar as caixinhas lado a lado */
+    background-color: #2BAF2B !important;
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: flex-start; /* alinha pelo topo */
-    flex-wrap: wrap; /* permite quebrar linha se não couber */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -15,7 +13,13 @@ h1 {
     font-family: 'Jersey 25';
     font-size: 50px;
     text-align: center;
-    width: 100%; /* garante que o título ocupe a linha inteira */
+    width: 100%;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #B37A45 !important;
+    width: 2000px;
 }
 
 .caixinha {
@@ -24,7 +28,6 @@ h1 {
     background-color: #3FC93F;
     border-radius: 20px;
     margin: 15px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
